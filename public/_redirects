@@ -1,0 +1,5 @@
+# Handle any 404s by serving the index.html (Single Page Application)
+/*    /index.html   200
+
+# Optional: Redirect old URLs or handle specific paths
+# /old-path   /new-path   301
