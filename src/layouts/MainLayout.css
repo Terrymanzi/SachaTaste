@@ -1,8 +1,8 @@
-#root {
+.main-layout {
   min-height: 100vh;
   background-color: var(--brand-black);
 }
 
-.home-page {
-  overflow-x: hidden;
+.main-content {
+  position: relative;
 }
