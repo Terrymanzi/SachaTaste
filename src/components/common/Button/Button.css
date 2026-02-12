@@ -1,0 +1,17 @@
+.btn {
+  /* Button base styles */
+  cursor: pointer;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.btn-primary {
+  /* Primary button styles */
+}
+
+.btn-secondary {
+  /* Secondary button styles */
+}
