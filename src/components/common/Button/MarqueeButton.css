@@ -1,0 +1,44 @@
+/* ===== Marquee Button Component ===== */
+.marquee-button {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-button-text {
+  display: inline-block;
+  color: var(--brand-white);
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  padding: 0 24px;
+  transition: all 0.3s ease;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  font-style: italic;
+}
+
+.marquee-button:hover .marquee-button-text {
+  color: var(--brand-black);
+  transform: scale(1.1);
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive sizing */
+@media (max-width: 768px) {
+  .marquee-button-text {
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+}
+
+@media (max-width: 480px) {
+  .marquee-button-text {
+    font-size: 14px;
+    letter-spacing: 1.5px;
+  }
+}
