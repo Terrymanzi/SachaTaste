@@ -12,6 +12,26 @@
   filter: drop-shadow(0 20px 40px rgba(0, 0, 0, 0.5));
 }
 
+/* ===== Mobile Only ORDER NOW Button ===== */
+.btn-mobile-order {
+  display: none;
+  background: var(--brand-black);
+  color: var(--brand-white);
+  padding: 10px 20px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  font-size: 11px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+}
+
+.btn-mobile-order:hover {
+  background: var(--brand-orange);
+}
+
 /* ===== Container Layout ===== */
 .navbar-container {
   display: flex;
@@ -397,9 +417,127 @@
 }
 
 /* ===== Responsive ===== */
+/* ===== Mobile Bottom Navigation ===== */
+.bottom-nav {
+  display: none;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: var(--brand-white);
+  padding: 10px 16px;
+  z-index: 999;
+  box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.2);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.bottom-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  max-width: 100%;
+}
+
+.bottom-nav-item {
+  flex: 1;
+}
+
+.bottom-nav-btn {
+  width: 100%;
+  background: transparent;
+  color: var(--brand-black);
+  padding: 10px 6px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  font-size: 11px;
+  border: 2px solid var(--brand-black);
+  border-radius: 6px;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: all 0.3s ease;
+  white-space: nowrap;
+}
+
+.bottom-nav-order {
+  background: var(--brand-black);
+  color: var(--brand-white);
+}
+
+.bottom-nav-btn:hover,
+.bottom-nav-order:hover {
+  background: var(--brand-orange);
+  color: var(--brand-white);
+  border-color: var(--brand-orange);
+}
+
+/* Mobile Opening Times Dropdown */
+.opening-times-wrapper-mobile {
+  position: relative;
+}
+
+.opening-times-dropdown-mobile {
+  position: absolute;
+  bottom: calc(100% + 10px);
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--brand-white);
+  padding: 20px;
+  border-radius: 12px;
+  min-width: 280px;
+  max-width: 90vw;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 -10px 40px rgba(0, 0, 0, 0.3);
+  z-index: 2000;
+}
+
+.opening-times-wrapper-mobile:hover .opening-times-dropdown-mobile {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
 @media (max-width: 900px) {
+  .navbar {
+    padding: 12px 20px;
+    background: var(--brand-white);
+    backdrop-filter: none;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    filter: none;
+  }
+
+  .navbar-container {
+    justify-content: space-between;
+  }
+
+  .navbar-logo img {
+    height: 40px;
+  }
+
   .navbar-buttons {
     display: none;
+  }
+
+  .btn-mobile-order {
+    display: block;
+  }
+
+  .bottom-nav {
+    display: block;
+  }
+
+  .hamburger {
+    background-color: var(--brand-black);
+  }
+
+  .hamburger span {
+    background-color: var(--brand-white);
+  }
+
+  .hamburger:hover {
+    background-color: var(--brand-orange);
   }
 
   .menu-overlay {
@@ -437,5 +575,19 @@
   .marquee-content {
     animation-duration: 18s;
     gap: 30px;
+  }
+
+  .bottom-nav {
+    padding: 8px 12px;
+  }
+
+  .bottom-nav-container {
+    gap: 6px;
+  }
+
+  .bottom-nav-btn {
+    font-size: 9px;
+    padding: 10px 4px;
+    letter-spacing: 0.5px;
   }
 }

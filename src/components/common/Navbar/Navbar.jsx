@@ -17,6 +17,9 @@ const Navbar = () => {
           <img src="/images/brand-logo.png" alt="sacha-Taste Brand Logo" />
         </div>
 
+        {/* Mobile Only ORDER NOW Button */}
+        <button className="btn-mobile-order">ORDER NOW</button>
+
         {/* Desktop Menu Buttons */}
         <div className="navbar-buttons">
           {/* Opening Times with Dropdown */}
@@ -151,6 +154,73 @@ const Navbar = () => {
               </a>
             </div>
           </div>
+        </div>
+      </div>
+
+      {/* Mobile Bottom Navigation */}
+      <div className="bottom-nav">
+        <div className="bottom-nav-container">
+          {/* Opening Times with Dropdown */}
+          <div className="bottom-nav-item opening-times-wrapper-mobile">
+            <button className="bottom-nav-btn">OPENING TIMES</button>
+            <div className="opening-times-dropdown-mobile">
+              <div className="dropdown-header">OPENING HOURS</div>
+              <div className="hours-list">
+                <div className="hours-item">
+                  <span className="day">MON</span>
+                  <span className="time">11.30-10PM</span>
+                </div>
+                <div className="hours-item">
+                  <span className="day">TUES</span>
+                  <span className="time">11.30-11PM</span>
+                </div>
+                <div className="hours-item">
+                  <span className="day">WED</span>
+                  <span className="time">11.30-11PM</span>
+                </div>
+                <div className="hours-item">
+                  <span className="day">THUR</span>
+                  <span className="time">11.30-12AM</span>
+                </div>
+                <div className="hours-item">
+                  <span className="day">FRI</span>
+                  <span className="time">11.30-1AM</span>
+                </div>
+                <div className="hours-item">
+                  <span className="day">SAT</span>
+                  <span className="time">11.30-1AM</span>
+                </div>
+                <div className="hours-item">
+                  <span className="day">SUN</span>
+                  <span className="time">11.30-11PM</span>
+                </div>
+              </div>
+              <div className="dropdown-footer">OR UNTIL SOLD OUT</div>
+              <div className="halal-badge">
+                <svg viewBox="0 0 100 100" fill="currentColor">
+                  <circle
+                    cx="50"
+                    cy="50"
+                    r="45"
+                    stroke="currentColor"
+                    strokeWidth="2"
+                    fill="none"
+                  />
+                  <text
+                    x="50"
+                    y="60"
+                    textAnchor="middle"
+                    fontSize="24"
+                    fontWeight="600"
+                  >
+                    حلال
+                  </text>
+                </svg>
+              </div>
+            </div>
+          </div>
+          <button className="bottom-nav-btn bottom-nav-order">ORDER NOW</button>
+          <button className="bottom-nav-btn">FIND US</button>
         </div>
       </div>
     </nav>
