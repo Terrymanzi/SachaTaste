@@ -5,6 +5,7 @@ import Authentic from "../components/Authentic/Authentic";
 import Menu from "../components/Menu/Menu";
 import Team from "../components/Team/Team";
 import Discover from "../components/Discover/Discover";
+import MarqueeText from "../components/MarqueeText/MarqueeText";
 import Footer from "../components/Footer/Footer";
 
 const HomePage = () => {
@@ -16,6 +17,7 @@ const HomePage = () => {
       <Menu />
       <Team />
       <Discover />
+      <MarqueeText />
       <Footer />
     </div>
   );
