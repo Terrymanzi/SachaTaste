@@ -42,6 +42,13 @@
 }
 
 /* ===== Logo ===== */
+.navbar-logo {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  cursor: pointer;
+}
+
 .navbar-logo img {
   height: 50px;
   width: auto;
@@ -275,6 +282,9 @@
 /* ===== Menu Logo ===== */
 .menu-logo {
   margin-bottom: 60px;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
 }
 
 .menu-logo img {
@@ -508,7 +518,7 @@
 .opening-times-wrapper-mobile:hover .opening-times-dropdown-mobile {
   opacity: 1;
   visibility: visible;
-  transform: translateX(-50%) translateY(0);
+  transform: translateX(-20%) translateY(0);
 }
 
 @media (max-width: 900px) {

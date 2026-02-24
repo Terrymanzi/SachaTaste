@@ -10,13 +10,23 @@ const Navbar = () => {
     setMenuOpen(!menuOpen);
   };
 
+  const handleMenuClick = (sectionId) => {
+    toggleMenu();
+    setTimeout(() => {
+      const element = document.getElementById(sectionId);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth", block: "start" });
+      }
+    }, 300);
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-container">
         {/* Logo */}
-        <div className="navbar-logo">
+        <Link to="/" className="navbar-logo">
           <img src="/images/brand-logo.png" alt="sacha-Taste Brand Logo" />
-        </div>
+        </Link>
 
         {/* Mobile Only ORDER NOW Button */}
         <button className="btn-mobile-order">ORDER NOW</button>
@@ -103,9 +113,9 @@ const Navbar = () => {
       <div className={`menu-overlay ${menuOpen ? "active" : ""}`}>
         <div className="menu-overlay-content">
           {/* Logo */}
-          <div className="menu-logo">
+          <Link to="/" className="menu-logo" onClick={toggleMenu}>
             <img src="/images/brand-logo.png" alt="sacha-Taste Brand Logo" />
-          </div>
+          </Link>
 
           {/* Close Button */}
           <button className="menu-close" onClick={toggleMenu}>
@@ -115,13 +125,24 @@ const Navbar = () => {
 
           {/* Navigation Links */}
           <nav className="menu-nav">
-            <a href="#about">ABOUT</a>
-            <a href="#menu">MENU</a>
+            <Link to="/" onClick={() => handleMenuClick("home")}>
+              HOME
+            </Link>
+            <a href="#delivery" onClick={() => handleMenuClick("delivery")}>
+              DELIVERY
+            </a>
+            <a href="#about" onClick={() => handleMenuClick("about")}>
+              ABOUT
+            </a>
+            <a href="#menu" onClick={() => handleMenuClick("menu")}>
+              MENU
+            </a>
+            <a href="#team" onClick={() => handleMenuClick("team")}>
+              TEAM
+            </a>
             <Link to="/find-us" onClick={toggleMenu}>
               LOCATIONS
             </Link>
-            <a href="#corporate">CORPORATE</a>
-            <a href="#careers">CAREERS</a>
           </nav>
 
           {/* Order Buttons - Marquee */}
