@@ -11,12 +11,24 @@ import Footer from "../components/Footer/Footer";
 const HomePage = () => {
   return (
     <div className="home-page">
-      <Hero />
-      <Delivery />
-      <Authentic />
-      <Menu />
-      <Team />
-      <Discover />
+      <section id="home">
+        <Hero />
+      </section>
+      <section id="delivery">
+        <Delivery />
+      </section>
+      <section id="about">
+        <Authentic />
+      </section>
+      <section id="menu">
+        <Menu />
+      </section>
+      <section id="team">
+        <Team />
+      </section>
+      <section id="discover">
+        <Discover />
+      </section>
       <MarqueeText />
       <Footer />
     </div>
