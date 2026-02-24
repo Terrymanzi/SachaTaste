@@ -156,7 +156,8 @@
 }
 
 /* ===== Button Base Style ===== */
-.navbar-buttons button {
+.navbar-buttons button,
+.navbar-buttons .btn-outlined {
   width: 250px;
   padding: 12px 64px;
   font-weight: 600;
@@ -167,6 +168,10 @@
   transition: all 0.3s ease;
   text-transform: uppercase;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* ===== Outlined Button Style ===== */
@@ -435,19 +440,21 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  gap: 8px;
+  /* gap: 8px; */
   max-width: 100%;
 }
 
 .bottom-nav-item {
   flex: 1;
+  width: 100px;
 }
 
 .bottom-nav-btn {
-  width: 100%;
+  flex: 1;
+  width: 100px;
   background: transparent;
   color: var(--brand-black);
-  padding: 10px 6px;
+  /* padding: 10px 6px; */
   font-weight: 700;
   letter-spacing: 0.8px;
   font-size: 11px;
@@ -457,6 +464,11 @@
   text-transform: uppercase;
   transition: all 0.3s ease;
   white-space: nowrap;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 6px;
 }
 
 .bottom-nav-order {

@@ -75,3 +75,42 @@ export const teamData = [
     image: "/images/CEO sacha.png",
   },
 ];
+
+// Locations data
+export const locationsData = [
+  {
+    id: 1,
+    name: "KIGALI",
+    subtitle: "City Centre",
+    address: "KN 4 Ave, Kigali",
+    status: "OPEN NOW",
+    openingTimes: [
+      { day: "Monday - Friday", hours: "11:00 AM - 10:00 PM" },
+      { day: "Saturday", hours: "12:00 PM - 11:00 PM" },
+      { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
+    ],
+    email: "mukobwinkashalon@gmail.com",
+    phone: "+250788436863",
+    coordinates: [-1.9441, 30.0619], // Kigali city centre coordinates
+    directionsUrl: "https://maps.google.com/?q=KN+4+Ave+Kigali+Rwanda",
+    orderUrl: "#order",
+  },
+  {
+    id: 2,
+    name: "NYARUGENGE",
+    subtitle: "Downtown",
+    address: "KN 3 Rd, Nyarugenge",
+    status: "OPEN NOW",
+    openingTimes: [
+      { day: "Monday - Friday", hours: "11:00 AM - 10:00 PM" },
+      { day: "Saturday", hours: "12:00 PM - 11:00 PM" },
+      { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
+    ],
+    email: "mukobwinkashalon@gmail.com",
+    phone: "+250788436863",
+    coordinates: [-1.9536, 30.0606], // Nyarugenge coordinates
+    directionsUrl:
+      "https://maps.google.com/?q=KN+3+Rd+Nyarugenge+Kigali+Rwanda",
+    orderUrl: "#order",
+  },
+];

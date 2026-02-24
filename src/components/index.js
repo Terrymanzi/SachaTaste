@@ -6,3 +6,6 @@ export { default as Team } from "./Team/Team";
 export { default as Discover } from "./Discover/Discover";
 export { default as MarqueeText } from "./MarqueeText/MarqueeText";
 export { default as Footer } from "./Footer/Footer";
+
+// FindUs - Reusable components
+export { LocationCard, LocationsSidebar } from "./FindUs";
