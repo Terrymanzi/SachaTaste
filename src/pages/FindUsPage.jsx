@@ -27,6 +27,7 @@ const FindUsPage = () => {
     <div className="find-us-page">
       <div className="find-us-sidebar">
         <div className="sidebar-header">
+          <h1 className="sidebar-title">Find Us</h1>
           <button className="back-button" onClick={() => navigate("/")}>
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none">
               <path
@@ -39,7 +40,6 @@ const FindUsPage = () => {
             </svg>
             Back to Home
           </button>
-          <h1 className="sidebar-title">Find Us</h1>
         </div>
 
         <div className="search-container">
@@ -169,7 +169,7 @@ const FindUsPage = () => {
       </div>
 
       <div className="find-us-map">
-        <Map locations={filteredLocations} zoom={8} center={[53.5, -1.5]} />
+        <Map locations={filteredLocations} zoom={13} center={[-1.95, 30.06]} />
       </div>
     </div>
   );

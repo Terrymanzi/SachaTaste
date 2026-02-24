@@ -80,36 +80,37 @@ export const teamData = [
 export const locationsData = [
   {
     id: 1,
-    name: "LEEDS",
+    name: "KIGALI",
     subtitle: "City Centre",
-    address: "7 Duncan St, LS1 6DQ",
+    address: "KN 4 Ave, Kigali",
     status: "OPEN NOW",
     openingTimes: [
       { day: "Monday - Friday", hours: "11:00 AM - 10:00 PM" },
       { day: "Saturday", hours: "12:00 PM - 11:00 PM" },
       { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
     ],
-    email: "leeds@sqew.uk",
-    phone: "+44 113 123 4567",
-    coordinates: [53.7985, -1.5418], // Leeds city centre coordinates
-    directionsUrl: "https://maps.google.com/?q=7+Duncan+St+Leeds+LS1+6DQ",
+    email: "mukobwinkashalon@gmail.com",
+    phone: "+250788436863",
+    coordinates: [-1.9441, 30.0619], // Kigali city centre coordinates
+    directionsUrl: "https://maps.google.com/?q=KN+4+Ave+Kigali+Rwanda",
     orderUrl: "#order",
   },
   {
     id: 2,
-    name: "MANCHESTER",
-    subtitle: "Deansgate",
-    address: "75 Deansgate, M3 2BW",
+    name: "NYARUGENGE",
+    subtitle: "Downtown",
+    address: "KN 3 Rd, Nyarugenge",
     status: "OPEN NOW",
     openingTimes: [
       { day: "Monday - Friday", hours: "11:00 AM - 10:00 PM" },
       { day: "Saturday", hours: "12:00 PM - 11:00 PM" },
       { day: "Sunday", hours: "12:00 PM - 9:00 PM" },
     ],
-    email: "manchester@sqew.uk",
-    phone: "+44 161 123 4567",
-    coordinates: [53.4808, -2.2426], // Manchester Deansgate coordinates
-    directionsUrl: "https://maps.google.com/?q=75+Deansgate+Manchester+M3+2BW",
+    email: "mukobwinkashalon@gmail.com",
+    phone: "+250788436863",
+    coordinates: [-1.9536, 30.0606], // Nyarugenge coordinates
+    directionsUrl:
+      "https://maps.google.com/?q=KN+3+Rd+Nyarugenge+Kigali+Rwanda",
     orderUrl: "#order",
   },
 ];
