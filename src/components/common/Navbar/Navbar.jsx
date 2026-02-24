@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import "./Navbar.css";
 import MarqueeButton from "../Button/MarqueeButton";
 
@@ -81,7 +82,9 @@ const Navbar = () => {
               </div>
             </div>
           </div>
-          <button className="btn-outlined">FIND US</button>
+          <Link to="/find-us" className="btn-outlined">
+            FIND US
+          </Link>
           <button className="btn-filled">ORDER NOW</button>
         </div>
 
@@ -114,7 +117,9 @@ const Navbar = () => {
           <nav className="menu-nav">
             <a href="#about">ABOUT</a>
             <a href="#menu">MENU</a>
-            <a href="#locations">LOCATIONS</a>
+            <Link to="/find-us" onClick={toggleMenu}>
+              LOCATIONS
+            </Link>
             <a href="#corporate">CORPORATE</a>
             <a href="#careers">CAREERS</a>
           </nav>
@@ -220,7 +225,9 @@ const Navbar = () => {
             </div>
           </div>
           <button className="bottom-nav-btn bottom-nav-order">ORDER NOW</button>
-          <button className="bottom-nav-btn">FIND US</button>
+          <Link to="/find-us" className="bottom-nav-btn">
+            FIND US
+          </Link>
         </div>
       </div>
     </nav>

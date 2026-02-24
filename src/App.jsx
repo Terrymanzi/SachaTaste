@@ -19,14 +19,25 @@
 // }
 /////////////////////////////////////////////////////////////////
 
-import { HomePage } from "./pages";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HomePage, FindUsPage } from "./pages";
 import { MainLayout } from "./layouts";
 import "./App.css";
 
 export default function App() {
   return (
-    <MainLayout>
-      <HomePage />
-    </MainLayout>
+    <BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <MainLayout>
+              <HomePage />
+            </MainLayout>
+          }
+        />
+        <Route path="/find-us" element={<FindUsPage />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
