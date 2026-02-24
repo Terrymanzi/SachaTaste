@@ -106,7 +106,13 @@
 
   .hero-left {
     width: 100%;
-    height: 40vh;
+    height: 45vh;
+    display: flex;
+    align-items: center;
+  }
+
+  .hero-person {
+    object-position: center 60%;
   }
 
   .hero-center {
@@ -135,5 +141,31 @@
 
   .hero-subtitle {
     font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-left {
+    height: 42vh;
+  }
+
+  .hero-person {
+    object-position: center 2.5%;
+  }
+
+  .hero-logo img {
+    max-width: 250px;
+  }
+
+  .hero-center {
+    margin: 30px 15px;
+  }
+
+  .hero-title {
+    font-size: 1.1rem;
+  }
+
+  .hero-subtitle {
+    font-size: 0.85rem;
   }
 }
