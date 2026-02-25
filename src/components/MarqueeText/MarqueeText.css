@@ -30,15 +30,15 @@
 
 /* Different speeds for each line */
 .marquee-line-1 .marquee-content {
-  animation-duration: 25s;
+  animation-duration: 20s;
 }
 
 .marquee-line-2 .marquee-content {
-  animation-duration: 30s;
+  animation-duration: 25s;
 }
 
 .marquee-line-3 .marquee-content {
-  animation-duration: 28s;
+  animation-duration: 30s;
 }
 
 /* Pause on hover */
@@ -49,9 +49,9 @@
 /* ===== Marquee Items ===== */
 .marquee-item {
   display: inline-block;
-  padding: 0 40px;
-  font-size: 72px;
-  font-weight: 900;
+  padding: 0 20px;
+  font-size: 64px;
+  font-weight: 300;
   letter-spacing: 4px;
   text-transform: uppercase;
   color: transparent;

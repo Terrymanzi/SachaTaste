@@ -5,8 +5,8 @@ const MarqueeText = ({ lines = [] }) => {
   // Default messages if none provided
   const defaultLines = [
     "THE TASTIEST FOODS AT YOUR DOORSTEP!",
-    "THE TASTIEST HUMMUS KEEP IT SQEW!",
-    "THE TASTIEST FALAFEL KEEP IT SQEW!",
+    "THE TASTIEST HUMMUS AT YOUR DOORSTEP!",
+    "THE TASTIEST FALAFEL AT YOUR DOORSTEP!",
   ];
 
   const displayLines = lines.length > 0 ? lines : defaultLines;
