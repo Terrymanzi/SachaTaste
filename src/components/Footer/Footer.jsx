@@ -6,9 +6,9 @@ const Footer = () => {
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-content">
-          <h2 className="footer-subtitle">TRUST</h2>
+          <h2 className="footer-subtitle">Taste the Deliciousness</h2>
           <h1 className="footer-title">SACHA's TASTE</h1>
-          <p className="footer-tagline">Taste The Deliciousness</p>
+          <p className="footer-tagline">Made by Terry</p>
         </div>
       </div>
       <div className="footer-bottom">
