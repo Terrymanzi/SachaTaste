@@ -52,14 +52,14 @@
 
 .hero-text {
   position: absolute;
-  bottom: 80px;
-  right: 80px;
+  bottom: 150px;
+  right: 100px;
   max-width: 600px;
   text-align: right;
 }
 
 .hero-title {
-  font-size: 2rem;
+  font-size: 1.5rem;
   font-weight: 300;
   margin-bottom: 20px;
   letter-spacing: 2px;
@@ -69,8 +69,9 @@
 
 .hero-subtitle {
   font-size: 1rem;
-  line-height: 1.6;
-  opacity: 0.5;
+  font-weight: 300;
+  /* line-height: 1.6; */
+  opacity: 0.25;
   font-style: italic;
 }
 
