@@ -29,7 +29,7 @@ const Navbar = () => {
         </Link>
 
         {/* Mobile Only ORDER NOW Button */}
-        <button className="btn-mobile-order">ORDER NOW</button>
+        {/* <button className="btn-mobile-order">ORDER NOW</button> */}
 
         {/* Desktop Menu Buttons */}
         <div className="navbar-buttons">
