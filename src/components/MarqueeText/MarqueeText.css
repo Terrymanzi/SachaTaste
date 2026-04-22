@@ -48,6 +48,7 @@
 
 /* ===== Marquee Items ===== */
 .marquee-item {
+  font-family: var(--font-display);
   display: inline-block;
   padding: 0 20px;
   font-size: 64px;

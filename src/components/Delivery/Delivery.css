@@ -21,6 +21,7 @@
 }
 
 .delivery-subtitle {
+  font-family: var(--font-serif);
   font-size: 1.5rem;
   font-weight: 400;
   font-style: italic;
@@ -29,6 +30,7 @@
 }
 
 .delivery-title {
+  font-family: var(--font-display);
   font-size: 5rem;
   font-weight: 900;
   font-style: italic;

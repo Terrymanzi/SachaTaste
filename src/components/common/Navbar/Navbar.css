@@ -103,12 +103,14 @@
 }
 
 .dropdown-header {
+  font-family: var(--font-display);
   font-size: 18px;
   font-weight: 700;
+  font-style: italic;
   color: var(--brand-black);
   text-align: left;
   margin-bottom: 20px;
-  letter-spacing: 1.5px;
+  letter-spacing: 1px;
   text-decoration: underline;
   text-decoration-thickness: 2px;
   text-underline-offset: 6px;
@@ -346,12 +348,14 @@
 }
 
 .menu-nav a {
+  font-family: var(--font-display);
   color: var(--brand-black);
   font-size: 28px;
   font-weight: 700;
+  font-style: italic;
   text-decoration: none;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: none;
   transition: all 0.3s ease;
 }
 

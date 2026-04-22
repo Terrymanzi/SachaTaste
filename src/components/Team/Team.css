@@ -16,6 +16,7 @@
 }
 
 .team-title {
+  font-family: var(--font-display);
   font-size: 4rem;
   line-height: 1.2;
 }
